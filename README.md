@@ -4,7 +4,7 @@ You can take a look at a script "generate_solutions.py" I use to generate soluti
 
 You can also take a look at the pdf of the training exam paper from FIPI (1.pdf), separate problems in LaTeX (directory called 1), output solutions in LaTeX (directory called 1_o4minihigh).
 
-Note that solutions are not perfect (the ones that contain images in problem statement). We will have to review solutions, just as we did for CheetahWAEC, to make sure they are perfect.
+Note that solutions are not perfect (the models struggle with problems that contain images in the problem statement). We will have to review solutions, just as we did for CheetahWAEC, to make sure they are perfect.
 
 I ask to generate solutions in batches corresponding to logical Steps, so that we will be able to add prewritten notes for each step in the future.
 
