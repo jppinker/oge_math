@@ -5,7 +5,7 @@ import requests
 import base64
 from pathlib import Path
 
-api_key = "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"
+api_key = "sk-or-v1-923837"
 
 def process_problems(api_key):
     base_dir = "/home/alex/Downloads/ideas/ogemath/"
@@ -148,7 +148,7 @@ def process_problems(api_key):
 
             # 5. Отправка запроса
             headers = {
-                "Authorization": f"Bearer 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",
+                "Authorization": f"Bearer sk-or-v1-923837",
                 "Content-Type": "application/json"
             }
 
