@@ -1,10 +1,12 @@
 # oge_math
 
-You can take a look at a script "generate_solutions.py" I use to geneate solutions for the OGE math problems from the FIPI bank of questions (FIPI is the official governing body that oversees the EGE and OGE exams).
+You can take a look at a script "generate_solutions.py" I use to generate solutions for the OGE math problems from the FIPI bank of questions (FIPI is the official governing body that oversees the EGE and OGE exams).
 
 You can also take a look at the pdf of the training exam paper from FIPI (1.pdf), separate problems in LaTeX (directory called 1), output solutions in LaTeX (directory called 1_o4minihigh).
 
-Note that solutions are not perfect (the ones that contain images in problem statement). We will have to review solutions, just as we did for CheetahWAEC.
+Note that solutions are not perfect (the ones that contain images in problem statement). We will have to review solutions, just as we did for CheetahWAEC, to make sure they are perfect.
+
+I ask to generate solutions in batches corresponding to logical Steps, so that we will be able to add prewritten notes for each step in the future.
 
 ###########################################################################################################################################################################################
 I tried the following AI models:
