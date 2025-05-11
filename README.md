@@ -15,6 +15,7 @@ openai/o1
 mistralai/mistral-medium-3
 meta-llama/llama-4-maverick
 google/gemma-3-27b-it
+qwen/qwen2.5-vl-72b-instruct
 
 The best ones content-wise are: anthropic/claude-3.7-sonnet, google/gemini-2.5-pro-preview, openai/o4-mini-high
 
