@@ -1,7 +1,7 @@
 # oge_math
 
 You can take a look at a script "generate_solutions.py" I use to geneate solutions for the OGE math problems from the FIPI bank of questions (FIPI is the official governing body that oversees the EGE and OGE exams).
-You can also take a look at the pdf of the training exam paper from FIPI, separate problems in LaTeX, output solutions in LaTeX.
+You can also take a look at the pdf of the training exam paper from FIPI (1.pdf), separate problems in LaTeX (directory called 1), output solutions in LaTeX (directory called 1_o4minihigh).
 
 ###########################################################################################################################################################################################
 I tried the following AI models:
