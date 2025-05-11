@@ -40,6 +40,7 @@ I chose model "openai/o4-mini-high" based on efficiency/price ratio.
 I fed model "Gemini 2.5 Pro Preview" 75 OGE math problems from the FIPI bank of questions and asked to define rigorously 5 levels of difficulty that I can use in prompts. Here is the output:
 
 Определения уровней сложности:
+
 Уровень 1 (Простая):
 Требует 1-2 прямолинейных шага для решения.
 Задействует базовые арифметические операции (сложение, вычитание, умножение, деление) или простейшие алгебраические преобразования.
