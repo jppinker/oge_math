@@ -1,0 +1,19 @@
+solution_text: Шаг 1. На вершине \(A\) диагональ \(AC\) делит угол \(\angle BAD\) на углы \(\angle BAC=1^\circ\) и \(\angle CAD=46^\circ\), поэтому  
+\[
+\angle BAD=\angle BAC+\angle CAD=1^\circ+46^\circ=47^\circ.
+\]  
+Шаг 2. В равнобедренной трапеции основания \(AD\parallel BC\), боковые стороны \(AB=CD\), следовательно углы при концах основания \(AD\) равны:  
+\[
+\angle BAD=\angle CDA=47^\circ.
+\]  
+Шаг 3. Сумма углов четырёхугольника равна \(360^\circ\), значит  
+\[
+\angle ABC+\angle BCD=360^\circ-2\cdot47^\circ=266^\circ,
+\]  
+а так как \(\angle ABC=\angle BCD\), то  
+\[
+\angle ABC=\angle BCD=\frac{266^\circ}{2}=133^\circ.
+\]  
+Ответ: \(133^\circ\).
+code: 7.3
+difficulty: 3

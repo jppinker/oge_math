@@ -1,0 +1,18 @@
+solution_text: |
+  \begin{aligned}
+  &\text{Шаг 1. Умножим обе части уравнения}
+  \;\frac{5a-8b+2}{8a-5b+2}=3
+  \;\text{на}\;8a-5b+2:\\
+  &\quad 5a-8b+2 = 3(8a-5b+2).\\
+  &\text{Шаг 2. Раскроем скобки и приведём подобные:}\\
+  &\quad 5a-8b+2 = 24a-15b+6
+  \;\Longrightarrow\;
+  -19a+7b-4=0
+  \;\Longrightarrow\;
+  19a-7b=4.\\
+  &\text{Шаг 3. Вычислим }19a-7b+12:\\
+  &\quad 19a-7b+12 = 4 + 12 = 16.
+  \end{aligned}
+
+code: 3.1
+difficulty: 1

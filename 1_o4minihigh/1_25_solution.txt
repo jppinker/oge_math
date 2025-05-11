@@ -1,0 +1,45 @@
+solution_text: Шаг 1. Введём систему координат: \(B=(0,0)\), \(C=(c,0)\), \(A=(0,a)\). Тогда середина стороны \(AC\) равна  
+\[
+M\bigl(\tfrac c2,\;\tfrac a2\bigr),
+\]  
+а середина медианы \(BM\) есть  
+\[
+K\bigl(\tfrac c4,\;\tfrac a4\bigr).
+\]
+
+Шаг 2. Прямая \(AK\) задаётся вектором \(\vec{AK}=(c/4,\,-3a/4)\). При параметре \(t\) точка на этой прямой имеет координаты  
+\[
+(x,y)=\bigl(0,a\bigr)+t\bigl(\tfrac c4,-\tfrac{3a}{4}\bigr).
+\]  
+Пересечение с \(BC\) (где \(y=0\)) даёт  
+\[
+a-\tfrac{3a}{4}t=0\ \Longrightarrow\ t=\tfrac{4}{3},\quad
+P\Bigl(\tfrac{c}{3},0\Bigr).
+\]
+
+Шаг 3. Площадь треугольника \(ABK\) вычисляется по детерминанту:
+\[
+S_{ABK}
+=\tfrac12\bigl|\det\bigl[\overrightarrow{AB},\overrightarrow{AK}\bigr]\bigr|
+=\tfrac12\Bigl|\det\begin{pmatrix}0&c/4\\a&-3a/4\end{pmatrix}\Bigr|
+=\frac{ca}{8}.
+\]
+
+Шаг 4. Площадь четырёхугольника \(KPCM\) через формулу для площади многоугольника даёт
+\[
+S_{KPCM}
+=\frac12\Bigl|\sum(x_i y_{i+1}-x_{i+1}y_i)\Bigr|
+=\frac{5ca}{24}.
+\]
+
+Шаг 5. Искомое отношение  
+\[
+\frac{S_{ABK}}{S_{KPCM}}
+=\frac{\frac{ca}{8}}{\frac{5ca}{24}}
+=\frac{3}{5}.
+\]
+
+\(\boxed{\frac{S_{ABK}}{S_{KPCM}}=\frac{3}{5}}\)
+
+code: 7.2  
+difficulty: 3

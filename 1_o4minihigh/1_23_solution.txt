@@ -1,0 +1,34 @@
+solution_text: Шаг 1. Пусть \(p=\frac{AO}{OC}\), \(q=\frac{BO}{OD}\). Тогда, обозначив угол между диагоналями за \(\theta\), имеем  
+\[
+\frac{[AOD]}{[BOC]}
+=\frac{\tfrac12\,AO\cdot OD\sin\theta}{\tfrac12\,BO\cdot OC\sin\theta}
+=\frac{AO\cdot OD}{BO\cdot OC}
+=\frac p q
+=\frac{16}{9}.
+\]
+
+Шаг 2. Если бы \(AB\parallel CD\), то из подобия \(\triangle AOB\sim\triangle COD\) следовало бы \(p=q\) и \( [AOD]=[BOC]\), что противоречит условию. Значит, основания трапеции — \(AD\parallel BC\). Тогда из подобия \(\triangle AOD\sim\triangle BOC\) получаем  
+\[
+\frac{AO}{OC}=\frac{DO}{BO}
+\quad\Longrightarrow\quad
+p=\frac1q.
+\]
+
+Шаг 3. Подставляя \(q=1/p\) в \(\tfrac p q=\tfrac{16}{9}\), получаем  
+\[
+p^2=\frac{16}{9},\quad p=\frac{4}{3},\quad q=\frac{3}{4}.
+\]
+
+Шаг 4. По отношениям площадей находим  
+\[
+[AOB]=q\,[AOD]=\frac34\cdot16=12,\qquad
+[COD]=\frac{[BOC]}{q}=\frac{9}{3/4}=12.
+\]
+
+Шаг 5. Площадь трапеции равна сумме площадей четырёх треугольников:  
+\[
+[ABCD]=[AOB]+[BOC]+[COD]+[AOD]=12+9+12+16=49\ \mathrm{см}^2.
+\]
+
+code: 7.3  
+difficulty: 3

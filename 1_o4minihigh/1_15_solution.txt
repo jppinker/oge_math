@@ -1,0 +1,21 @@
+solution_text:
+Шаг 1. Найдём угол при вершине $B$:
+\[
+\angle B=180^\circ-10^\circ-64^\circ=106^\circ.
+\]
+Шаг 2. Так как $BH\perp AC$, то угол между $BH$ и $BC$ равен
+\[
+\angle HBC=90^\circ-\angle C=90^\circ-64^\circ=26^\circ.
+\]
+Шаг 3. Биссектриса $BD$ делит угол $B$ пополам, поэтому
+\[
+\angle CBD=\frac{\angle B}{2}=\frac{106^\circ}{2}=53^\circ.
+\]
+Шаг 4. Искомый угол между прямыми $BH$ и $BD$ находим как разность:
+\[
+\angle(DB,\,BH)=\angle CBD-\angle HBC=53^\circ-26^\circ=27^\circ.
+\]
+Ответ: $27^\circ$.
+
+code: 7.2  
+difficulty: 3

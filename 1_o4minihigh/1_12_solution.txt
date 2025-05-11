@@ -1,0 +1,10 @@
+solution_text: 
+\[
+\begin{aligned}
+\text{Шаг 1. }&PV = vRT,\\
+\text{Шаг 2. }&V = \frac{vRT}{P},\\
+\text{Шаг 3. }&V = \frac{48.3 \cdot 8.31 \cdot 250}{23891.25} = 4.2\ \mathrm{м}^3.
+\end{aligned}
+\]
+code: 1.5
+difficulty: 1

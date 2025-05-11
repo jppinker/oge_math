@@ -1,0 +1,8 @@
+solution_text: 
+\begin{align*}
+\text{Шаг 1. }&-12+3x>0\;\Longrightarrow\;3x>12\;\Longrightarrow\;x>4,\\
+\text{Шаг 2. }&9-4x>-3\;\Longrightarrow\;-4x>-12\;\Longrightarrow\;x<3,\\
+\text{Шаг 3. }&\{x>4\}\cap\{x<3\}=\varnothing.
+\end{align*}
+code: 3.2
+difficulty: 1
