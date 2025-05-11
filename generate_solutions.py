@@ -179,4 +179,4 @@ def process_problems(api_key):
                 print(f"Ошибка обработки {file}: {str(e)}")
                 print(images)
 
-process_problems("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")
+process_problems("sk-or-v1-923837")
