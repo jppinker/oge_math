@@ -1,0 +1,30 @@
+problem_text:
+
+Установите соответствие между графиками функций и формулами, которые их задают.\\
+ГРАФИКИ\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_03613e5bc72212abe9beg-2(3)}\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_03613e5bc72212abe9beg-2(1)}\\
+B)\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_03613e5bc72212abe9beg-2(2)}
+
+ФОРМУЛЫ
+
+\begin{enumerate}
+  \item $y=x^{2}-8 x+16$
+  \item $y=-x^{2}-8 x-16$
+  \item $y=-x^{2}+8 x-16$
+\end{enumerate}
+
+В таблице под каждой буквой укажите соответствующий номер
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+A & D & B \\
+\hline
+ &  &  \\
+\hline
+\end{tabular}
+\end{center}
+
+answer: 123

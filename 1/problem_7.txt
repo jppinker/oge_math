@@ -1,0 +1,13 @@
+problem_text:
+
+На координатной прямой отмечены точки $A, B, C$, и $D$. Одна из них соответствует данному числу $\frac{116}{15}$. Какая это точка?\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_03613e5bc72212abe9beg-2}
+
+\begin{enumerate}
+  \item $A$
+  \item $B$
+  \item $C$
+  \item $D$
+\end{enumerate}
+
+answer: 4

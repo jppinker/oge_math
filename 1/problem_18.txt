@@ -1,0 +1,7 @@
+problem_text:
+
+Найдите тангенс угла $A O B$, изображенного на рисунке
+
+\includegraphics[max width=\textwidth, center]{2025_05_06_03613e5bc72212abe9beg-3}\\
+
+answer: 0,8

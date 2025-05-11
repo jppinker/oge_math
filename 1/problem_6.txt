@@ -1,0 +1,5 @@
+problem_text:
+
+Найдите значение выражения $1 \frac{1}{12}:\left(1 \frac{13}{18}-2 \frac{5}{9}\right)$
+
+answer: $-1,3$

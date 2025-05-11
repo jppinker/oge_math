@@ -1,0 +1,11 @@
+problem_text:
+
+Укажите решение системы неравенств: $\left\{\begin{array}{l}-12+3 x>0 \\ 9-4 x>-3\end{array}\right.$
+
+\begin{enumerate}
+  \item нет решений\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_03613e5bc72212abe9beg-3(3)}\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_03613e5bc72212abe9beg-3(2)}
+\end{enumerate}
+
+answer: 1
