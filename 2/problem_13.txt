@@ -1,0 +1,7 @@
+problem_text:
+
+Укажите решение неравенства: $-2 x+5 \leq-3 x-3$\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_acee71d6596a9a632f5eg-3(2)}
+
+
+answer: 2

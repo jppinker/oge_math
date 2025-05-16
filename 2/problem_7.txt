@@ -1,0 +1,13 @@
+problem_text:
+
+Одна из точек, отмеченных на координатной прямой, соответствует числу $\frac{1}{7}$. Какая это точка?\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_acee71d6596a9a632f5eg-2}
+
+\begin{enumerate}
+  \item $A$
+  \item $B$
+  \item $C$
+  \item $D$
+\end{enumerate}
+
+answer: 1

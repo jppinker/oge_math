@@ -1,0 +1,31 @@
+problem_text:
+
+На рисунке изображены графики функций вида $y=k x+b$.
+
+Установите соответствие между графиками функций и знаками коэффициентов.
+
+\section*{ГРАФИКИ}
+\includegraphics[max width=\textwidth, center]{2025_05_06_acee71d6596a9a632f5eg-2(1)}\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_acee71d6596a9a632f5eg-2(2)}\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_acee71d6596a9a632f5eg-2(3)}
+
+\section*{КОЭФФИЦИЕНТЫ}
+\begin{enumerate}
+  \item $k>0, b<0$
+  \item $k<0, \quad b<0$
+  \item $k<0, b>0$
+\end{enumerate}
+
+B таблице под каждой буквой укажите соответствующий номер
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+A & D & B \\
+\hline
+ &  &  \\
+\hline
+\end{tabular}
+\end{center}
+
+answer: 123

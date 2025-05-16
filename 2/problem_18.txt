@@ -1,0 +1,7 @@
+problem_text:
+
+На рисунке изображен параллелограмм $A B C D$. Используя рисунок, найдите $\sin \angle H B A$.\\
+\includegraphics[max width=\textwidth, center]{2025_05_06_acee71d6596a9a632f5eg-3(1)}
+
+
+answer: 0,6

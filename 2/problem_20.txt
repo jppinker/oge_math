@@ -1,0 +1,4 @@
+problem_text:
+Решите уравнение $x^{5}-9 x^{3}+20 x=0$.
+
+answer: $\pm \sqrt{5} ; \pm 2 ; 0$

@@ -1,0 +1,5 @@
+problem_text:
+
+Найдите значение выражения $9 \cdot\left(\frac{1}{9}\right)^{2}-19 \cdot \frac{1}{9}$
+
+answer: -2
