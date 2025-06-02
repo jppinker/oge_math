@@ -7,5 +7,3 @@ The problems are only of difficulty=1 (by claude) and difficulty=2 (by o4mini)
 I did not ask LLM to define skills for each step since these problems are designed to cover specific skill after all.
 
 I did not separate each Step to individual column.
-
-I did not ask LLM to define "code" from OGE codificator, since we will have a table with correspondance between skills and codes. So we will do it automatically when this correspondance is defined.
