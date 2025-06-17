@@ -224,44 +224,48 @@ class MathTester:
         return problem_text, answer
     
     def run_test(self):
-        """Run the complete diagnostic test"""
+        """Run the complete diagnostic test with adaptive difficulty"""
         print("=== Диагностический тест для ОГЭ по математике ===")
         print("✓ Прохождение теста не займет много времени! ✓")
         print("Вам будут предложены 20 задач с вариантами ответов.\n")
         
         question_number = 1
-        self.questions_asked = 0
-        self.current_difficulty = None
-        
-        # Test each skill in the specified order
-        for skill_str, base_difficulty in test_config.items():
+        skills = list(test_config.keys())
+        current_difficulty = None
+    
+        for i, skill_str in enumerate(skills):
             skill = int(skill_str)
-            
-            # Determine current difficulty level
-            if self.current_difficulty is None:
-                # First question - use base difficulty
-                difficulty = base_difficulty
+        
+            # Determine difficulty for this question
+            if i == 0:
+                # First question uses base difficulty
+                current_difficulty = test_config[skill_str]
             else:
-                # Subsequent questions - use current difficulty
-                difficulty = self.current_difficulty
+                # Subsequent questions use adjusted difficulty based on previous answer
+                prev_correct = self.student_answers[-1][4]  # Get correctness of previous answer
+                base_difficulty = test_config[skill_str]
+                
+                if prev_correct is False:  # Previous answer was incorrect
+                    current_difficulty = max(1, base_difficulty - 1)
+                else:  # Previous correct or skipped
+                    current_difficulty = base_difficulty
             
-            print(f"\n--- Задача {question_number} (Навык {skill}, Сложность {difficulty}) ---")
+            print(f"\n--- Задача {question_number} (Навык {skill}, Сложность {current_difficulty}) ---")
             
             # Get question for this skill and difficulty
-            problem_text, correct_answer = self.get_question(skill, difficulty)
+            problem_text, correct_answer = self.get_question(skill, current_difficulty)
             
             if problem_text is None:
                 # If no question available, mark as skipped
-                self.student_answers.append((skill, difficulty, None, None, None))
+                self.student_answers.append((skill, current_difficulty, None, None, None))
                 question_number += 1
-                self.questions_asked += 1
                 continue
             
             # Display question
             print(f"Задача: {problem_text}")
             
             # Get student answer
-            student_answer = input("Your answer: ").strip()
+            student_answer = input("Ваш ответ: ").strip()
             
             # Check if answer is correct
             if student_answer == "":
@@ -270,8 +274,7 @@ class MathTester:
                 is_correct = self.check_answer(student_answer, correct_answer)
                 
             # Store result
-            self.student_answers.append((skill, difficulty, correct_answer, student_answer, is_correct))
-            self.questions_asked += 1
+            self.student_answers.append((skill, current_difficulty, correct_answer, student_answer, is_correct))
             
             # Provide feedback
             if is_correct is None:
@@ -280,19 +283,6 @@ class MathTester:
                 print("✓ Ваш ответ ВЕРНЫЙ!")
             else:
                 print(f"✗ Ваш ответ НЕВЕРНЫЙ. Правильный ответ: {correct_answer}")
-            
-            # Update difficulty for next question based on response
-            if is_correct is False:  # Incorrect answer
-                # Decrease difficulty but not below 1
-                self.current_difficulty = max(1, difficulty - 1)
-                #print(f"Следующий вопрос будет проще (сложность: {self.current_difficulty})")
-            elif is_correct is True:  # Correct answer
-                # Maintain current difficulty level
-                self.current_difficulty = difficulty
-                #print(f"Следующий вопрос останется на том же уровне сложности ({self.current_difficulty})")
-            else:  # Skipped question
-                # Maintain current difficulty level
-                self.current_difficulty = difficulty
             
             question_number += 1
         
