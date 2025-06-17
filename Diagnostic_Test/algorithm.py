@@ -1,4 +1,7 @@
 
+
+#In this version, the algorithm decreases the difficulty of next question by 1 if the answer was wrong
+
 import sqlite3
 import random
 from collections import defaultdict, deque
@@ -181,7 +184,7 @@ skill_graph = {
 
 # Test configuration: skills and their difficulty levels
 test_config = {
-    "1": 3, "6": 3, "20": 3, "69": 3, "89": 2, "110": 2, "112": 2, "135": 2, 
+    "1": 1, "6": 3, "20": 3, "69": 3, "89": 2, "110": 2, "112": 2, "135": 2, 
     "106": 2, "139": 3, "145": 2, "158": 1, "162": 3, "167": 1, "173": 1, 
     "48": 2, "56": 2, "80": 1, "120": 2, "133": 2
 }
@@ -191,7 +194,8 @@ class MathTester:
         """Initialize the tester with database connection"""
         self.db_path = db_path
         self.student_answers = []  # Store (skill, difficulty, correct_answer, student_answer, is_correct)
-        
+        self.current_difficulty = None  # Track current difficulty level
+        self.questions_asked = 0  # Track number of questions asked
     def connect_db(self):
         """Connect to the SQLite database"""
         return sqlite3.connect(self.db_path)
@@ -226,10 +230,21 @@ class MathTester:
         print("Вам будут предложены 20 задач с вариантами ответов.\n")
         
         question_number = 1
+        self.questions_asked = 0
+        self.current_difficulty = None
         
         # Test each skill in the specified order
-        for skill_str, difficulty in test_config.items():
+        for skill_str, base_difficulty in test_config.items():
             skill = int(skill_str)
+            
+            # Determine current difficulty level
+            if self.current_difficulty is None:
+                # First question - use base difficulty
+                difficulty = base_difficulty
+            else:
+                # Subsequent questions - use current difficulty
+                difficulty = self.current_difficulty
+            
             print(f"\n--- Задача {question_number} (Навык {skill}, Сложность {difficulty}) ---")
             
             # Get question for this skill and difficulty
@@ -239,6 +254,7 @@ class MathTester:
                 # If no question available, mark as skipped
                 self.student_answers.append((skill, difficulty, None, None, None))
                 question_number += 1
+                self.questions_asked += 1
                 continue
             
             # Display question
@@ -247,7 +263,7 @@ class MathTester:
             # Get student answer
             student_answer = input("Your answer: ").strip()
             
-            # Check if answer is correct (simple string comparison, could be enhanced)
+            # Check if answer is correct
             if student_answer == "":
                 is_correct = None  # Skipped
             else:
@@ -255,6 +271,7 @@ class MathTester:
                 
             # Store result
             self.student_answers.append((skill, difficulty, correct_answer, student_answer, is_correct))
+            self.questions_asked += 1
             
             # Provide feedback
             if is_correct is None:
@@ -263,6 +280,19 @@ class MathTester:
                 print("✓ Ваш ответ ВЕРНЫЙ!")
             else:
                 print(f"✗ Ваш ответ НЕВЕРНЫЙ. Правильный ответ: {correct_answer}")
+            
+            # Update difficulty for next question based on response
+            if is_correct is False:  # Incorrect answer
+                # Decrease difficulty but not below 1
+                self.current_difficulty = max(1, difficulty - 1)
+                #print(f"Следующий вопрос будет проще (сложность: {self.current_difficulty})")
+            elif is_correct is True:  # Correct answer
+                # Maintain current difficulty level
+                self.current_difficulty = difficulty
+                #print(f"Следующий вопрос останется на том же уровне сложности ({self.current_difficulty})")
+            else:  # Skipped question
+                # Maintain current difficulty level
+                self.current_difficulty = difficulty
             
             question_number += 1
         
@@ -464,4 +494,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
