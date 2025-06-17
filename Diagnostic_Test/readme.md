@@ -287,6 +287,8 @@ So the final list of skills we have to test if we want to cover the whole graph 
 
 To ensure accurate skill assessment, problem difficulty is inversely scaled to skill fundamentality: since some skills are simple we need to offer more difficult problems for simpler skills. Here is the dictionary with skills as keys and difficulty level as values:
 
-{"1": 3, "69": 3, "89": 3, "110": 2, "112": 2, "135": 2, "106": 1, "139": 1, "145": 2, "158": 1, "162": 2, "167": 1, "173": 2, "48": 2, "56": 3, "80": 1, "120": 2, "133": 2}
+{"1": 1, "69": 3, "89": 3, "110": 2, "112": 2, "135": 2, "106": 1, "139": 1, "145": 2, "158": 1, "162": 2, "167": 1, "173": 2, "48": 2, "56": 3, "80": 1, "120": 2, "133": 2}
+
+If a student gives a wrong answer to the question of difficulty X, the next question will be of difficulty max(1,X-1).
 
 
