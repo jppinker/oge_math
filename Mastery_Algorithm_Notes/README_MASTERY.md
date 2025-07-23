@@ -65,7 +65,9 @@ The Beta distribution is used in the Bayesian mastery estimation algorithm for t
 #### Update Rule
 - For each attempt in the `activity` table:
   - Query the `skills` list for the problem (via `question_id`).
-  - If `finished_or_not = True` and `is_correct = True`, increment \( \alpha_i \) by \( w(d) \) for each skill \( i \) in the problem’s skill list (credit for success).
+  - If `finished_or_not = True` and `is_correct = True`, compute current mastery probability ( p_i = \frac{\alpha_i}{\alpha_i + \beta_i} ), then determine the bracket factor ( f ) based on ( p_i ):
+  If ( p_i < 0.2 ): ( f = 2 ), Else if ( p_i < 0.5 ): ( f = 0.725 ), Else if ( p_i < 0.7 ): ( f = 0.6667 ), Else: ( f = 0.5 ).
+  Then increment \( \alpha_i \) by \( f*w(d) \) for each skill \( i \) in the problem’s skill list (credit for success).
   - If `finished_or_not = True` and `is_correct = False`, increment \( \beta_i \) by \( w(d) \) for each skill \( i \) in the skill list (penalty for failure).
   - If `finished_or_not = False` (problem skipped):
     - If difficulty \( \geq 3 \), increment \( \beta_i \) by \( w(d) \) for each skill \( i \) (penalty for failure).
@@ -137,13 +139,15 @@ Problem number types (e.g., 11 for algebraic formulas and graphs) are tied to sp
 
 #### Update Rule
 - For each attempt where `problem_number_type = T` and difficulty \( d \in \{1, 2, 3, 4, 5\} \):
-  - If `finished_or_not = True` and `is_correct = True`, increment \( \alpha_T \) by \( w(d) \).
+  - If `finished_or_not = True` and `is_correct = True`, compute current mastery probability ( p_i = \frac{\alpha_T}{\alpha_T + \beta_T} ), then determine the bracket factor ( f ) based on ( p_T ):
+  If ( p_T < 0.2 ): ( f = 2 ), Else if ( p_T < 0.5 ): ( f = 0.725 ), Else if ( p_T < 0.7 ): ( f = 0.6667 ), Else: ( f = 0.5 ).
+  Then increment \( \alpha_T \) by \( f*w(d) \) for each problem type \( T \).
   - If `finished_or_not = True` and `is_correct = False`, increment \( \beta_T \) by \( w(d) \).
   - If `finished_or_not = False`, treat as incorrect with a smaller penalty, e.g., increment \( \beta_T \) by \( 0.5 \cdot w(d) \).
   - If `finished_or_not = False` (problem skipped):
     - If difficulty \( \geq 3 \), increment \( \beta_T \) by \( w(d) \) for each problem type \( T \) (penalty for failure).
     - If difficulty \( \leq 2 \), increment \( \beta_T \) by \( 0.5 \cdot w(d) \) for each problem type \( T \).
-- **Difficulty Weighting (\( w(d) \))**:
+- **Difficulty Weighting (\( w(d) \)) should be one of**:
   - **Linear Scaling**: \( w(d) = d \).
   - **Exponential Scaling**: \( w(d) = 2^{d-1} \).
 - **Rationale**: Directly reflects the student’s performance on each problem type, critical for OGE exam preparation where each number has a fixed structure.
