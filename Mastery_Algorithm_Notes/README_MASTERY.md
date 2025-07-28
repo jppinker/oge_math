@@ -22,7 +22,7 @@ Skills are the foundational units of the OGE syllabus, with each problem requiri
   - \( \alpha_i \): Represents "successes" (evidence of mastery).
   - \( \beta_i \): Represents "failures" (evidence of non-mastery).
 
-- Why Beta distribution?
+- **Why Beta distribution?**
 The Beta distribution is used in the Bayesian mastery estimation algorithm for the following reasons:
 1. **Models Probabilities**: Naturally represents probabilities (values between 0 and 1), ideal for estimating mastery likelihoods.
 2. **Conjugate Prior**: Simplifies Bayesian updates, as the Beta distribution is a conjugate prior for the Bernoulli/binomial likelihood, making calculations straightforward.
@@ -31,7 +31,7 @@ The Beta distribution is used in the Bayesian mastery estimation algorithm for t
 5. **Uncertainty Quantification**: Provides variance and confidence intervals, enabling robust mastery thresholds (e.g., \(P(p_i > 0.7) > 0.95\)).
 6. **Incremental Updates**: Supports efficient, real-time updates by incrementing \(\alpha\) or \(\beta\) based on new performance data.
 
-# Beta distribution basic facts: 
+#### Beta distribution basic facts
 - **Definition**: A continuous probability distribution defined on [0, 1], ideal for modeling probabilities or proportions.
 - **Parameters**: \(\alpha\) (successes) and \(\beta\) (failures), both positive, shape the distribution.
 - **Probability Density Function**: 
@@ -50,7 +50,6 @@ The Beta distribution is used in the Bayesian mastery estimation algorithm for t
 - **Conjugate Prior**: Conjugate to the Bernoulli/binomial distribution, simplifying Bayesian updates.
 - **Shapes**: Flexible shapes (e.g., uniform for \(\alpha = \beta = 1\), U-shaped, skewed) based on \(\alpha\) and \(\beta\).
 - **Applications**: Used in Bayesian inference, A/B testing, and modeling uncertainty in proportions (e.g., skill mastery).
-
 
 #### Initialization
 - Each student passes a diagnostic test upon registration. As a result, each skill is classified as **weak** or **non-weak**. Beta parameters priors are assigned as follows:
@@ -233,6 +232,105 @@ Problem number types (e.g., 11 for algebraic formulas and graphs) are tied to sp
 - **Storage**: Store \( \alpha \), \( \beta \), and timestamps in a `student_mastery` table for efficient updates and retrieval.
 - **Tuning**: Adjust parameters like \( \lambda \), \( w(d) \), and thresholds based on empirical data to meet sensitivity requirements.
 - **Scalability**: Use caching and periodic updates to handle time decay efficiently, avoiding recalculation of \( w(t) \) for every display.
+
+## Storage and Retrieval of Mastery Weights
+
+We use a single `student_mastery` table with columns:
+- `user_id` (BIGINT): Identifies the user.
+- `entity_type` (VARCHAR): Distinguishes between 'skill' and 'problem_type'.
+- `entity_id` (INTEGER): Unique identifier for the skill or problem type.
+- `alpha` (FLOAT): Alpha parameter of the Beta distribution.
+- `beta` (FLOAT): Beta parameter of the Beta distribution.
+- **Primary Key**: Composite key `(user_id, entity_type, entity_id)` to ensure uniqueness.
+
+**Note**: Topics: Since \( p_t \) is computed as the average of \( p_i \) for associated skills, we don’t store \( (\alpha_t, \beta_t) \) in the table. Instead, we calculate it dynamically when needed. Computing \( p_t \) on the fly avoids redundant storage and keeps the table lean, though it requires an efficient `get_skills_for_topic` implementation. **IMPORTANT**: We need to write a function `get_skills_for_topic(topic_id)` that returns a list of skill numbers that correspond to the given topic.
+
+### SQL Code to Create Table
+
+```sql
+CREATE TABLE IF NOT EXISTS student_mastery (
+    user_id BIGINT,
+    entity_type VARCHAR(20),
+    entity_id INTEGER,
+    alpha FLOAT,
+    beta FLOAT,
+    PRIMARY KEY (user_id, entity_type, entity_id)
+);
+```
+
+### Examples of How to Retrieve Weights from student_mastery Table
+
+```python
+import psycopg2
+
+def get_alpha_beta(conn, user_id, entity_type, entity_id):
+    """Generic function to retrieve alpha and beta for a given entity."""
+    with conn.cursor() as cur:
+        cur.execute("""
+            SELECT alpha, beta FROM student_mastery
+            WHERE user_id = %s AND entity_type = %s AND entity_id = %s
+        """, (user_id, entity_type, entity_id))
+        result = cur.fetchone()
+        return result if result else (None, None)
+
+def get_skill_alpha_beta(conn, user_id, skill_id):
+    """Retrieve (alpha_i, beta_i) for a specific skill."""
+    return get_alpha_beta(conn, user_id, 'skill', skill_id)
+
+def get_problem_type_alpha_beta(conn, user_id, problem_type):
+    """Retrieve (alpha_T, beta_T) for a specific problem type."""
+    return get_alpha_beta(conn, user_id, 'problem_type', problem_type)
+
+def get_topic_mastery(conn, user_id, topic_id, get_skills_for_topic):
+    """Compute p_t for a topic as the average p_i of associated skills."""
+    skill_ids = get_skills_for_topic(topic_id)  # Assume this function returns skill IDs
+    p_i_list = []
+    for skill_id in skill_ids:
+        alpha, beta = get_skill_alpha_beta(conn, user_id, skill_id)
+        if alpha is not None and beta is not None:
+            p_i = alpha / (alpha + beta)  # Mastery probability for the skill
+            p_i_list.append(p_i)
+    return sum(p_i_list) / len(p_i_list) if p_i_list else None
+
+# Example usage:
+# conn = psycopg2.connect(...)  # Your connection setup
+# alpha_i, beta_i = get_skill_alpha_beta(conn, 1, 38)
+# alpha_T, beta_T = get_problem_type_alpha_beta(conn, 1, 11)
+# p_t = get_topic_mastery(conn, 1, 2, lambda tid: [38, 39])  # Example skill mapping
+```
+
+### Examples of How to Set and Update Weights from student_mastery Table
+
+```python
+import psycopg2
+
+def set_alpha_beta(conn, user_id, entity_type, entity_id, alpha, beta):
+    """Write or update alpha and beta for a given entity."""
+    with conn.cursor() as cur:
+        cur.execute("""
+            INSERT INTO student_mastery (user_id, entity_type, entity_id, alpha, beta)
+            VALUES (%s, %s, %s, %s, %s)
+            ON CONFLICT (user_id, entity_type, entity_id)
+            DO UPDATE SET alpha = EXCLUDED.alpha, beta = EXCLUDED.beta
+        """, (user_id, entity_type, entity_id, alpha, beta))
+    conn.commit()
+
+def set_skill_alpha_beta(conn, user_id, skill_id, alpha, beta):
+    """Write (alpha_i, beta_i) for a specific skill."""
+    set_alpha_beta(conn, user_id, 'skill', skill_id, alpha, beta)
+
+def set_problem_type_alpha_beta(conn, user_id, problem_type, alpha, beta):
+    """Write (alpha_T, beta_T) for a specific problem type."""
+    set_alpha_beta(conn, user_id, 'problem_type', problem_type, alpha, beta)
+
+# Example usage:
+# conn = psycopg2.connect(...)  # Your connection setup
+# set_skill_alpha_beta(conn, 1, 38, 5.0, 45.0)  # Set skill 38 for user 1
+# set_problem_type_alpha_beta(conn, 1, 11, 1.0, 25.0)  # Set problem type 11 for user 1
+```
+
+**Note**: The `INSERT ... ON CONFLICT` syntax (upsert) ensures that if the record exists, it updates the values; otherwise, it inserts a new record.
+
 
 ## Conclusion
 
