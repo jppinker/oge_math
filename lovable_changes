@@ -1,0 +1,80 @@
+Created the public student_mastery table successfully with proper RLS policies and foreign key reference to auth.users.
+
+Created the public student_activity table with proper RLS policies and performance indexes.
+
+Create the public table student_mastery_status
+
+Edited
+src/components/PromptBar.tsx
+
+Edited
+supabase/functions/initialize-priors/index.ts
+Edited
+supabase/functions/_shared/cors.ts
+
+Edited
+supabase/functions/set-alpha-beta/index.ts
+
+Edited
+supabase/functions/get-alpha-beta/index.ts
+#Created the get-alpha-beta edge function that retrieves alpha/beta values from the student mastery table.
+
+Edited
+supabase/functions/compute-mastery-probability/index.ts
+#Created the compute-mastery-probability edge function that calculates Beta distribution means for mastery probability computation.
+
+Edited
+supabase/functions/compute-velocity-factor/index.ts
+#Created the compute-velocity-factor edge function that calculates tiered velocity factors based on mastery probability thresholds.
+
+Edited
+supabase/functions/compute-difficulty-weight/index.ts
+#Created the compute-difficulty-weight edge function that calculates weights using linear or exponential scaling based on difficulty levels.
+
+Edited
+supabase/functions/update-skill-for-attempt/index.ts
+#Created the update-skill-for-attempt edge function that processes student attempts and updates skill mastery using our existing functions.
+
+Edited
+src/components/PromptBar.tsx
+
+Edited
+src/App.css
+#Replaced the loading text in entrypage prompt bar with an animated circle that smoothly transitions between purple and blue colors while output is being generated.
+
+Edited
+supabase/functions/get-skills-for-topic/index.ts
+#Created the get-skills-for-topic Supabase edge function that maps topic codes to skill IDs from your JSON data.
+
+Edited
+supabase/functions/compute-topic-mastery/index.ts
+#Created the compute-topic-mastery edge function that orchestrates calls to existing functions to calculate average mastery probability for all skills in a topic.
+
+Edited
+supabase/functions/apply-cusum/index.ts
+#Created the CUSUM edge function that implements performance shift detection with automatic alpha/beta adjustments based on cumulative performance tracking.
+
+Edited
+supabase/functions/compute-time-decay/index.ts
+Edited
+supabase/functions/apply-time-decay-to-params/index.ts
+
+Edited
+supabase/functions/get-recent-outcomes/index.ts
+Edited
+supabase/functions/perform-sprt/index.ts
+Edited
+supabase/functions/get-latest-attempt-time/index.ts
+Edited
+supabase/functions/check-mastery-status/index.ts
+Edited
+supabase/functions/update-mastery-status/index.ts
+#Created five edge functions implementing the SPRT mastery status calculation system: get-recent-outcomes, perform-sprt, get-latest-attempt-time, check-mastery-status (main orchestrator), and update-mastery-status.
+
+Edited
+supabase/functions/compute-topic-mastery-with-decay/index.ts
+Edited
+supabase/functions/check-topic-mastery-status/index.ts
+Edited
+supabase/functions/update-topic-mastery-status/index.ts
+#Created three edge functions for topic mastery calculation using SPRT: compute-topic-mastery-with-decay, check-topic-mastery-status, and update-topic-mastery-status.
