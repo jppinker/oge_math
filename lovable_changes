@@ -78,3 +78,28 @@ supabase/functions/check-topic-mastery-status/index.ts
 Edited
 supabase/functions/update-topic-mastery-status/index.ts
 #Created three edge functions for topic mastery calculation using SPRT: compute-topic-mastery-with-decay, check-topic-mastery-status, and update-topic-mastery-status.
+
+
+##################################
+
+added 25.08.2025 15:20:00 CET
+
+Edited
+supabase/functions/adjust-for-scores/index.ts
+#Created the adjust-for-scores edge function that processes FIPI scores (0,1,2) and returns appropriate alpha/beta adjustments.
+
+Edited
+supabase/functions/adjust-for-duration/index.ts
+#Created the function to reduce alpha increments by 30% (0.7 multiplier) when duration exceeds 500 seconds threshold.
+
+Edited
+supabase/functions/get-cusum-s/index.ts
+Edited
+supabase/functions/apply-cusum-adjustment/index.ts
+Edited
+supabase/functions/update-cusum-s/index.ts
+#Created three edge functions for CUSUM operations: get-cusum-s, apply-cusum-adjustment, and update-cusum-s.
+
+Edited
+supabase/functions/process-attempt/index.ts
+#Created the process-attempt edge function that orchestrates the full update workflow for student attempts.
