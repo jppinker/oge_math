@@ -1,0 +1,1381 @@
+[
+    {
+        "skill": 1,
+        "skill_name": "Натуральные и целые числа",
+        "Importance": 0,
+        "topic_name": "Натуральные и целые числа",
+        "topic_code": 1.1
+    },
+    {
+        "skill": 2,
+        "skill_name": "Научная форма числа",
+        "Importance": 2,
+        "topic_name": "Натуральные и целые числа",
+        "topic_code": 1.1
+    },
+    {
+        "skill": 3,
+        "skill_name": "Делимость чисел",
+        "Importance": 2,
+        "topic_name": "Натуральные и целые числа",
+        "topic_code": 1.1
+    },
+    {
+        "skill": 4,
+        "skill_name": "Признаки делимости на 2, 3, 5, 9, 10",
+        "Importance": 2,
+        "topic_name": "Натуральные и целые числа",
+        "topic_code": 1.1
+    },
+    {
+        "skill": 5,
+        "skill_name": "Нахождение НОД и НОК",
+        "Importance": 1,
+        "topic_name": "Натуральные и целые числа",
+        "topic_code": 1.1
+    },
+    {
+        "skill": 6,
+        "skill_name": "Обыкновенные и десятичные дроби",
+        "Importance": 0,
+        "topic_name": "Дроби и проценты",
+        "topic_code": 1.2
+    },
+    {
+        "skill": 195,
+        "skill_name": "смешанные числа",
+        "Importance": 3,
+        "topic_name": "Дроби и проценты",
+        "topic_code": 1.2
+    },
+    {
+        "skill": 7,
+        "skill_name": "Нахождение доли от числа",
+        "Importance": 2,
+        "topic_name": "Дроби и проценты",
+        "topic_code": 1.2
+    },
+    {
+        "skill": 8,
+        "skill_name": "Вычисление процентов",
+        "Importance": 2,
+        "topic_name": "Дроби и проценты",
+        "topic_code": 1.2
+    },
+    {
+        "skill": 9,
+        "skill_name": "Повышение/понижение на процент",
+        "Importance": 2,
+        "topic_name": "Дроби и проценты",
+        "topic_code": 1.2
+    },
+    {
+        "skill": 10,
+        "skill_name": "Бесконечные периодические дроби",
+        "Importance": 4,
+        "topic_name": "Дроби и проценты",
+        "topic_code": 1.2
+    },
+    {
+        "skill": 11,
+        "skill_name": "Определение рациональных чисел",
+        "Importance": 2,
+        "topic_name": "Рациональные числа и арифметические действия",
+        "topic_code": 1.3
+    },
+    {
+        "skill": 12,
+        "skill_name": "Расположение на координатной прямой",
+        "Importance": 2,
+        "topic_name": "Рациональные числа и арифметические действия",
+        "topic_code": 1.3
+    },
+    {
+        "skill": 13,
+        "skill_name": "Сравнение и упорядочивание рациональных чисел",
+        "Importance": 2,
+        "topic_name": "Рациональные числа и арифметические действия",
+        "topic_code": 1.3
+    },
+    {
+        "skill": 14,
+        "skill_name": "Преобразование дробей",
+        "Importance": 2,
+        "topic_name": "Рациональные числа и арифметические действия",
+        "topic_code": 1.3
+    },
+    {
+        "skill": 15,
+        "skill_name": "Арифметические действия с  обыкновенными дробями",
+        "Importance": 0,
+        "topic_name": "Рациональные числа и арифметические действия",
+        "topic_code": 1.3
+    },
+    {
+        "skill": 16,
+        "skill_name": "Арифметические действия с десятичными дробями",
+        "Importance": 2,
+        "topic_name": "Рациональные числа и арифметические действия",
+        "topic_code": 1.3
+    },
+    {
+        "skill": 17,
+        "skill_name": "Раскрытие скобок, распределительное свойство",
+        "Importance": 0,
+        "topic_name": "Рациональные числа и арифметические действия",
+        "topic_code": 1.3
+    },
+    {
+        "skill": 180,
+        "skill_name": "порядок математических операций",
+        "Importance": 0,
+        "topic_name": "Рациональные числа и арифметические действия",
+        "topic_code": 1.3
+    },
+    {
+        "skill": 18,
+        "skill_name": "Классификация действительныех чисел",
+        "Importance": 2,
+        "topic_name": "Действительные числа",
+        "topic_code": 1.4
+    },
+    {
+        "skill": 19,
+        "skill_name": "Приближённое значение корня числа",
+        "Importance": 3,
+        "topic_name": "Действительные числа",
+        "topic_code": 1.4
+    },
+    {
+        "skill": 20,
+        "skill_name": "Арифметические операции с действительными числами",
+        "Importance": 2,
+        "topic_name": "Действительные числа",
+        "topic_code": 1.4
+    },
+    {
+        "skill": 197,
+        "skill_name": "Сравнение и упорядочивание действительныех чисел",
+        "Importance": 1,
+        "topic_name": "Действительные числа",
+        "topic_code": 1.4
+    },
+    {
+        "skill": 21,
+        "skill_name": "Понятие точности и погрешности",
+        "Importance": 2,
+        "topic_name": "Приближённые вычисления",
+        "topic_code": 1.5
+    },
+    {
+        "skill": 22,
+        "skill_name": "Округление чисел",
+        "Importance": 2,
+        "topic_name": "Приближённые вычисления",
+        "topic_code": 1.5
+    },
+    {
+        "skill": 23,
+        "skill_name": "Приближённые вычисления",
+        "Importance": 2,
+        "topic_name": "Приближённые вычисления",
+        "topic_code": 1.5
+    },
+    {
+        "skill": 35,
+        "skill_name": "Выражения с переменными",
+        "Importance": 0,
+        "topic_name": "Буквенные выражения",
+        "topic_code": 2.1
+    },
+    {
+        "skill": 36,
+        "skill_name": "Подстановка значений",
+        "Importance": 0,
+        "topic_name": "Буквенные выражения",
+        "topic_code": 2.1
+    },
+    {
+        "skill": 37,
+        "skill_name": "Упрощение выражений",
+        "Importance": 0,
+        "topic_name": "Буквенные выражения",
+        "topic_code": 2.1
+    },
+    {
+        "skill": 38,
+        "skill_name": "Раскрытие скобок",
+        "Importance": 0,
+        "topic_name": "Буквенные выражения",
+        "topic_code": 2.1
+    },
+    {
+        "skill": 39,
+        "skill_name": "Определение степени с целым показателем",
+        "Importance": 0,
+        "topic_name": "Степени",
+        "topic_code": 2.2
+    },
+    {
+        "skill": 40,
+        "skill_name": "Определение степени с рациональным показателем (Корни)",
+        "Importance": 1,
+        "topic_name": "Степени",
+        "topic_code": 2.2
+    },
+    {
+        "skill": 41,
+        "skill_name": "Умножение и деление степеней при одном основании",
+        "Importance": 1,
+        "topic_name": "Степени",
+        "topic_code": 2.2
+    },
+    {
+        "skill": 42,
+        "skill_name": "Возведение степени в степень",
+        "Importance": 1,
+        "topic_name": "Степени",
+        "topic_code": 2.2
+    },
+    {
+        "skill": 43,
+        "skill_name": "Степень произведения и частного",
+        "Importance": 1,
+        "topic_name": "Степени",
+        "topic_code": 2.2
+    },
+    {
+        "skill": 44,
+        "skill_name": "Отрицательные степени",
+        "Importance": 2,
+        "topic_name": "Степени",
+        "topic_code": 2.2
+    },
+    {
+        "skill": 45,
+        "skill_name": "Определение одночлена и многочлена",
+        "Importance": 2,
+        "topic_name": "Многочлены",
+        "topic_code": 2.3
+    },
+    {
+        "skill": 46,
+        "skill_name": "Приведение подобных членов многочленов",
+        "Importance": 1,
+        "topic_name": "Многочлены",
+        "topic_code": 2.3
+    },
+    {
+        "skill": 47,
+        "skill_name": "Сложение и вычитание многочленов",
+        "Importance": 1,
+        "topic_name": "Многочлены",
+        "topic_code": 2.3
+    },
+    {
+        "skill": 48,
+        "skill_name": "Умножение многочленов",
+        "Importance": 1,
+        "topic_name": "Многочлены",
+        "topic_code": 2.3
+    },
+    {
+        "skill": 49,
+        "skill_name": "Разложение многочленов на множители (факторизация)",
+        "Importance": 1,
+        "topic_name": "Многочлены",
+        "topic_code": 2.3
+    },
+    {
+        "skill": 179,
+        "skill_name": "Разложение многочленов на множители (факторизация) квадратичный случай",
+        "Importance": 2,
+        "topic_name": "Многочлены",
+        "topic_code": 2.3
+    },
+    {
+        "skill": 50,
+        "skill_name": "Определение и сокращение алгебраических дробей",
+        "Importance": 0,
+        "topic_name": "Алгебраические дроби",
+        "topic_code": 2.4
+    },
+    {
+        "skill": 51,
+        "skill_name": "Основное свойство алгебраической дроби",
+        "Importance": 1,
+        "topic_name": "Алгебраические дроби",
+        "topic_code": 2.4
+    },
+    {
+        "skill": 52,
+        "skill_name": "Арифметические действия с алгебраическими дробями",
+        "Importance": 1,
+        "topic_name": "Алгебраические дроби",
+        "topic_code": 2.4
+    },
+    {
+        "skill": 53,
+        "skill_name": "Преобразование выражений с алгебраическими дробями",
+        "Importance": 1,
+        "topic_name": "Алгебраические дроби",
+        "topic_code": 2.4
+    },
+    {
+        "skill": 54,
+        "skill_name": "Определение корней",
+        "Importance": 1,
+        "topic_name": "Арифметические корни",
+        "topic_code": 2.5
+    },
+    {
+        "skill": 55,
+        "skill_name": "Свойства корней",
+        "Importance": 2,
+        "topic_name": "Арифметические корни",
+        "topic_code": 2.5
+    },
+    {
+        "skill": 56,
+        "skill_name": "Арифметика с корнями",
+        "Importance": 2,
+        "topic_name": "Арифметические корни",
+        "topic_code": 2.5
+    },
+    {
+        "skill": 57,
+        "skill_name": "Рационализация знаменателя",
+        "Importance": 3,
+        "topic_name": "Арифметические корни",
+        "topic_code": 2.5
+    },
+    {
+        "skill": 58,
+        "skill_name": "Решение линейных уравнений",
+        "Importance": 0,
+        "topic_name": "Уравнения и системы",
+        "topic_code": 3.1
+    },
+    {
+        "skill": 59,
+        "skill_name": "Решение уравнений с дробями и скобками",
+        "Importance": 1,
+        "topic_name": "Уравнения и системы",
+        "topic_code": 3.1
+    },
+    {
+        "skill": 60,
+        "skill_name": "Решение квадратных уравнений",
+        "Importance": 1,
+        "topic_name": "Уравнения и системы",
+        "topic_code": 3.1
+    },
+    {
+        "skill": 61,
+        "skill_name": "Решение систем линейных уравнений",
+        "Importance": 2,
+        "topic_name": "Уравнения и системы",
+        "topic_code": 3.1
+    },
+    {
+        "skill": 62,
+        "skill_name": "Рациональные уравнения",
+        "Importance": 2,
+        "topic_name": "Уравнения и системы",
+        "topic_code": 3.1
+    },
+    {
+        "skill": 188,
+        "skill_name": "Методы подстановки / перебора / отбора значений",
+        "Importance": 3,
+        "topic_name": "Уравнения и системы",
+        "topic_code": 3.1
+    },
+    {
+        "skill": 190,
+        "skill_name": "Применение формул с параметрами",
+        "Importance": 4,
+        "topic_name": "Уравнения и системы",
+        "topic_code": 3.1
+    },
+    {
+        "skill": 191,
+        "skill_name": "Уравнения с модулями",
+        "Importance": 4,
+        "topic_name": "Уравнения и системы",
+        "topic_code": 3.1
+    },
+    {
+        "skill": 63,
+        "skill_name": "Решение линейных неравенств",
+        "Importance": 2,
+        "topic_name": "Неравенства и системы",
+        "topic_code": 3.2
+    },
+    {
+        "skill": 64,
+        "skill_name": "Графическое представление решений",
+        "Importance": 2,
+        "topic_name": "Неравенства и системы",
+        "topic_code": 3.2
+    },
+    {
+        "skill": 65,
+        "skill_name": "Решение систем линейных неравенств",
+        "Importance": 2,
+        "topic_name": "Неравенства и системы",
+        "topic_code": 3.2
+    },
+    {
+        "skill": 66,
+        "skill_name": "Квадратные неравенства",
+        "Importance": 2,
+        "topic_name": "Неравенства и системы",
+        "topic_code": 3.2
+    },
+    {
+        "skill": 67,
+        "skill_name": "Рациональные неравенства",
+        "Importance": 2,
+        "topic_name": "Неравенства и системы",
+        "topic_code": 3.2
+    },
+    {
+        "skill": 68,
+        "skill_name": "Метод интервалов",
+        "Importance": 2,
+        "topic_name": "Неравенства и системы",
+        "topic_code": 3.2
+    },
+    {
+        "skill": 69,
+        "skill_name": "Перевод текставой задачи в уравнение",
+        "Importance": 0,
+        "topic_name": "Текстовые задачи",
+        "topic_code": 3.3
+    },
+    {
+        "skill": 70,
+        "skill_name": "Текстовые задачи: Задачи на проценты, сплавы и смеси",
+        "Importance": 3,
+        "topic_name": "Текстовые задачи",
+        "topic_code": 3.3
+    },
+    {
+        "skill": 71,
+        "skill_name": "Текстовые задачи: Движение по прямой",
+        "Importance": 3,
+        "topic_name": "Текстовые задачи",
+        "topic_code": 3.3
+    },
+    {
+        "skill": 72,
+        "skill_name": "Текстовые задачи: Задачи на движение по воде",
+        "Importance": 3,
+        "topic_name": "Текстовые задачи",
+        "topic_code": 3.3
+    },
+    {
+        "skill": 73,
+        "skill_name": "Текстовые задачи: Задачи на совместную работу",
+        "Importance": 3,
+        "topic_name": "Текстовые задачи",
+        "topic_code": 3.3
+    },
+    {
+        "skill": 74,
+        "skill_name": "Текстовые задачи: Задачи про бизнес",
+        "Importance": 3,
+        "topic_name": "Текстовые задачи",
+        "topic_code": 3.3
+    },
+    {
+        "skill": 184,
+        "skill_name": "Составление и опровержение утверждений",
+        "Importance": 2,
+        "topic_name": "Текстовые задачи",
+        "topic_code": 3.3
+    },
+    {
+        "skill": 185,
+        "skill_name": "Работа с необходимыми и достаточными условиями",
+        "Importance": 4,
+        "topic_name": "Текстовые задачи",
+        "topic_code": 3.3
+    },
+    {
+        "skill": 75,
+        "skill_name": "Разные текстовые задачи",
+        "Importance": 3,
+        "topic_name": "Текстовые задачи",
+        "topic_code": 3.3
+    },
+    {
+        "skill": 76,
+        "skill_name": "Запись последовательностей",
+        "Importance": 2,
+        "topic_name": "Последовательности",
+        "topic_code": 4.1
+    },
+    {
+        "skill": 77,
+        "skill_name": "Способы задания последовательностей",
+        "Importance": 2,
+        "topic_name": "Последовательности",
+        "topic_code": 4.1
+    },
+    {
+        "skill": 78,
+        "skill_name": "Правило n-го члена последовательностей",
+        "Importance": 2,
+        "topic_name": "Последовательности",
+        "topic_code": 4.1
+    },
+    {
+        "skill": 79,
+        "skill_name": "Определение следующего члена последовательностей",
+        "Importance": 2,
+        "topic_name": "Последовательности",
+        "topic_code": 4.1
+    },
+    {
+        "skill": 80,
+        "skill_name": "Арифметическая прогрессия",
+        "Importance": 2,
+        "topic_name": "Арифметическая и геометрическая прогрессии. Формула сложных процентов",
+        "topic_code": 4.2
+    },
+    {
+        "skill": 81,
+        "skill_name": "Сумма первых n членов  АП",
+        "Importance": 2,
+        "topic_name": "Арифметическая и геометрическая прогрессии. Формула сложных процентов",
+        "topic_code": 4.2
+    },
+    {
+        "skill": 82,
+        "skill_name": "Определение разности и первого члена  АП",
+        "Importance": 2,
+        "topic_name": "Арифметическая и геометрическая прогрессии. Формула сложных процентов",
+        "topic_code": 4.2
+    },
+    {
+        "skill": 83,
+        "skill_name": "Текстовые задачи на АП",
+        "Importance": 3,
+        "topic_name": "Арифметическая и геометрическая прогрессии. Формула сложных процентов",
+        "topic_code": 4.2
+    },
+    {
+        "skill": 84,
+        "skill_name": "Геометрическая прогрессия",
+        "Importance": 2,
+        "topic_name": "Арифметическая и геометрическая прогрессии. Формула сложных процентов",
+        "topic_code": 4.2
+    },
+    {
+        "skill": 85,
+        "skill_name": "Сумма первых n членов  ГП",
+        "Importance": 2,
+        "topic_name": "Арифметическая и геометрическая прогрессии. Формула сложных процентов",
+        "topic_code": 4.2
+    },
+    {
+        "skill": 86,
+        "skill_name": "Определение разности и первого члена  ГП",
+        "Importance": 2,
+        "topic_name": "Арифметическая и геометрическая прогрессии. Формула сложных процентов",
+        "topic_code": 4.2
+    },
+    {
+        "skill": 87,
+        "skill_name": "Текстовые задачи на ГП",
+        "Importance": 3,
+        "topic_name": "Арифметическая и геометрическая прогрессии. Формула сложных процентов",
+        "topic_code": 4.2
+    },
+    {
+        "skill": 88,
+        "skill_name": "Сложные проценты",
+        "Importance": 3,
+        "topic_name": "Арифметическая и геометрическая прогрессии. Формула сложных процентов",
+        "topic_code": 4.2
+    },
+    {
+        "skill": 89,
+        "skill_name": "Понятие функции и способы её задания",
+        "Importance": 3,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 90,
+        "skill_name": "Область определения и множество значений",
+        "Importance": 2,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 91,
+        "skill_name": "Нули функции",
+        "Importance": 1,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 92,
+        "skill_name": "Построение графиков функции",
+        "Importance": 2,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 93,
+        "skill_name": "Линейные функции",
+        "Importance": 1,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 94,
+        "skill_name": "Квадратичные функции (Параболы)",
+        "Importance": 1,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 95,
+        "skill_name": "Гиперболы",
+        "Importance": 4,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 96,
+        "skill_name": "Промежутки знакопостоянства функции",
+        "Importance": 3,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 97,
+        "skill_name": "Промежутки монотонности функции",
+        "Importance": 3,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 98,
+        "skill_name": "Чтение графиков функции",
+        "Importance": 2,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 99,
+        "skill_name": "Максимумы и минимумы функции",
+        "Importance": 2,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 186,
+        "skill_name": "Симметрия графика функции",
+        "Importance": 4,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 187,
+        "skill_name": "Параметрические преобразования графиков",
+        "Importance": 4,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 100,
+        "skill_name": "Наибольшее и наименьшее значение функции на промежутке",
+        "Importance": 4,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 101,
+        "skill_name": "Кусочно-непрерывные функции",
+        "Importance": 4,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 102,
+        "skill_name": "Растяжения и сдвиги",
+        "Importance": 4,
+        "topic_name": "Свойства и графики функций",
+        "topic_code": 5.1
+    },
+    {
+        "skill": 103,
+        "skill_name": "Расположение чисел на прямой (Отметка точек)",
+        "Importance": 0,
+        "topic_name": "Координатная прямая",
+        "topic_code": 6.1
+    },
+    {
+        "skill": 104,
+        "skill_name": "Расстояние между точками на координатной прямой",
+        "Importance": 2,
+        "topic_name": "Координатная прямая",
+        "topic_code": 6.1
+    },
+    {
+        "skill": 105,
+        "skill_name": "Модули",
+        "Importance": 2,
+        "topic_name": "Координатная прямая",
+        "topic_code": 6.1
+    },
+    {
+        "skill": 106,
+        "skill_name": "Интервалы",
+        "Importance": 2,
+        "topic_name": "Координатная прямая",
+        "topic_code": 6.1
+    },
+    {
+        "skill": 107,
+        "skill_name": "Неравенства",
+        "Importance": 2,
+        "topic_name": "Координатная прямая",
+        "topic_code": 6.1
+    },
+    {
+        "skill": 108,
+        "skill_name": "Сравнение и упорядочивание чисел на координатной прямой",
+        "Importance": 1,
+        "topic_name": "Координатная прямая",
+        "topic_code": 6.1
+    },
+    {
+        "skill": 109,
+        "skill_name": "Выбор верного или неверного утверждения о числах на координатной прямой",
+        "Importance": 3,
+        "topic_name": "Координатная прямая",
+        "topic_code": 6.1
+    },
+    {
+        "skill": 110,
+        "skill_name": "Построение точек по координатам на плоскости",
+        "Importance": 0,
+        "topic_name": "Декартовы координаты",
+        "topic_code": 6.2
+    },
+    {
+        "skill": 111,
+        "skill_name": "Расстояние между точками на плоскости",
+        "Importance": 1,
+        "topic_name": "Декартовы координаты",
+        "topic_code": 6.2
+    },
+    {
+        "skill": 112,
+        "skill_name": "Точки, прямые, отрезки, лучи",
+        "Importance": 2,
+        "topic_name": "Геометрические фигуры",
+        "topic_code": 7.1
+    },
+    {
+        "skill": 113,
+        "skill_name": "Углы и их виды",
+        "Importance": 0,
+        "topic_name": "Геометрические фигуры",
+        "topic_code": 7.1
+    },
+    {
+        "skill": 114,
+        "skill_name": "Измерение углов",
+        "Importance": 2,
+        "topic_name": "Геометрические фигуры",
+        "topic_code": 7.1
+    },
+    {
+        "skill": 115,
+        "skill_name": "Параллельные и перпендикулярные прямые",
+        "Importance": 1,
+        "topic_name": "Геометрические фигуры",
+        "topic_code": 7.1
+    },
+    {
+        "skill": 116,
+        "skill_name": "Серединный перпендикуляр",
+        "Importance": 3,
+        "topic_name": "Геометрические фигуры",
+        "topic_code": 7.1
+    },
+    {
+        "skill": 117,
+        "skill_name": "Виды треугольников",
+        "Importance": 1,
+        "topic_name": "Треугольники",
+        "topic_code": 7.2
+    },
+    {
+        "skill": 118,
+        "skill_name": "Элементы треугольника (сторона, угол, высота, медиана, биссектриса)",
+        "Importance": 0,
+        "topic_name": "Треугольники",
+        "topic_code": 7.2
+    },
+    {
+        "skill": 119,
+        "skill_name": "Свойства углов треугольника",
+        "Importance": 2,
+        "topic_name": "Треугольники",
+        "topic_code": 7.2
+    },
+    {
+        "skill": 120,
+        "skill_name": "Признаки равенства треугольников",
+        "Importance": 2,
+        "topic_name": "Треугольники",
+        "topic_code": 7.2
+    },
+    {
+        "skill": 121,
+        "skill_name": "Признаки подобия треугольников",
+        "Importance": 2,
+        "topic_name": "Треугольники",
+        "topic_code": 7.2
+    },
+    {
+        "skill": 122,
+        "skill_name": "Неравенство треугольника",
+        "Importance": 3,
+        "topic_name": "Треугольники",
+        "topic_code": 7.2
+    },
+    {
+        "skill": 123,
+        "skill_name": "Прямоугольный треугольник: Теорема Пифагора",
+        "Importance": 1,
+        "topic_name": "Треугольники",
+        "topic_code": 7.2
+    },
+    {
+        "skill": 124,
+        "skill_name": "Прямоугольный треугольник:  Тригонометрия",
+        "Importance": 1,
+        "topic_name": "Треугольники",
+        "topic_code": 7.2
+    },
+    {
+        "skill": 125,
+        "skill_name": "Виды многоугольников",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 126,
+        "skill_name": "Элементы многоугольников",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 127,
+        "skill_name": "Углы многоугольников",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 128,
+        "skill_name": "Правильные многоугольники",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 129,
+        "skill_name": "Деление многоугольников на треугольники",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 130,
+        "skill_name": "Прямоугольник",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 131,
+        "skill_name": "Ромб",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 132,
+        "skill_name": "Квадрат",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 133,
+        "skill_name": "Параллелограмм",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 134,
+        "skill_name": "Трапеция",
+        "Importance": 2,
+        "topic_name": "Многоугольники",
+        "topic_code": 7.3
+    },
+    {
+        "skill": 135,
+        "skill_name": "Элементы окружности и круга (Касательная, хорда, секущая, радиус)",
+        "Importance": 1,
+        "topic_name": "Окружность и круг",
+        "topic_code": 7.4
+    },
+    {
+        "skill": 136,
+        "skill_name": "Центральные и вписанные углы",
+        "Importance": 2,
+        "topic_name": "Окружность и круг",
+        "topic_code": 7.4
+    },
+    {
+        "skill": 137,
+        "skill_name": "Вписанные  фигуры",
+        "Importance": 2,
+        "topic_name": "Окружность и круг",
+        "topic_code": 7.4
+    },
+    {
+        "skill": 138,
+        "skill_name": "Описанные фигуры",
+        "Importance": 4,
+        "topic_name": "Окружность и круг",
+        "topic_code": 7.4
+    },
+    {
+        "skill": 139,
+        "skill_name": "Длина отрезка, длина ломаной",
+        "Importance": 1,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 140,
+        "skill_name": "Периметр многоугольника",
+        "Importance": 1,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 141,
+        "skill_name": "Расстояние от точки до прямой",
+        "Importance": 3,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 142,
+        "skill_name": "Длина окружности",
+        "Importance": 1,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 143,
+        "skill_name": "Градусная мера угла",
+        "Importance": 1,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 144,
+        "skill_name": "Ссоответствие между величиной угла и длиной дуги окружности",
+        "Importance": 2,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 145,
+        "skill_name": "Площадь и её свойства",
+        "Importance": 1,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 146,
+        "skill_name": "Площадь прямоугольника",
+        "Importance": 2,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 147,
+        "skill_name": "Площадь параллелограмма",
+        "Importance": 2,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 148,
+        "skill_name": "Площадь трапеции",
+        "Importance": 2,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 149,
+        "skill_name": "Площадь треугольника",
+        "Importance": 2,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 150,
+        "skill_name": "Площадь круга и его частей",
+        "Importance": 2,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 151,
+        "skill_name": "Пропорциональное деление площади",
+        "Importance": 3,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 152,
+        "skill_name": "Формулы объёма прямоугольного параллелепипеда, куба, шара",
+        "Importance": 4,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 153,
+        "skill_name": "Фигуры на квадратной решётке",
+        "Importance": 2,
+        "topic_name": "Измерения",
+        "topic_code": 7.5
+    },
+    {
+        "skill": 154,
+        "skill_name": "Направление и длина вектора",
+        "Importance": 2,
+        "topic_name": "Векторы",
+        "topic_code": 7.6
+    },
+    {
+        "skill": 155,
+        "skill_name": "Координаты вектора",
+        "Importance": 2,
+        "topic_name": "Векторы",
+        "topic_code": 7.6
+    },
+    {
+        "skill": 156,
+        "skill_name": "Сложение и вычитание векторов",
+        "Importance": 2,
+        "topic_name": "Векторы",
+        "topic_code": 7.6
+    },
+    {
+        "skill": 157,
+        "skill_name": "Умножение вектора на число",
+        "Importance": 2,
+        "topic_name": "Векторы",
+        "topic_code": 7.6
+    },
+    {
+        "skill": 196,
+        "skill_name": "Скалярное произведение векторов",
+        "Importance": 4,
+        "topic_name": "Векторы",
+        "topic_code": 7.6
+    },
+    {
+        "skill": 158,
+        "skill_name": "Анализ геометрических высказываний",
+        "Importance": 3,
+        "topic_name": "Дополнительные темы по геометрии",
+        "topic_code": 7.7
+    },
+    {
+        "skill": 159,
+        "skill_name": "Работа с чертежами",
+        "Importance": 3,
+        "topic_name": "Дополнительные темы по геометрии",
+        "topic_code": 7.7
+    },
+    {
+        "skill": 160,
+        "skill_name": "Задачи на доказательство",
+        "Importance": 3,
+        "topic_name": "Дополнительные темы по геометрии",
+        "topic_code": 7.7
+    },
+    {
+        "skill": 161,
+        "skill_name": "Геометрические задачи повышенной сложности",
+        "Importance": 4,
+        "topic_name": "Дополнительные темы по геометрии",
+        "topic_code": 7.7
+    },
+    {
+        "skill": 162,
+        "skill_name": "Сбор данных",
+        "Importance": 2,
+        "topic_name": "Описательная статистика",
+        "topic_code": 8.1
+    },
+    {
+        "skill": 163,
+        "skill_name": "Таблицы и диаграммы в статистике",
+        "Importance": 2,
+        "topic_name": "Описательная статистика",
+        "topic_code": 8.1
+    },
+    {
+        "skill": 164,
+        "skill_name": "Среднее арифметическое",
+        "Importance": 2,
+        "topic_name": "Описательная статистика",
+        "topic_code": 8.1
+    },
+    {
+        "skill": 165,
+        "skill_name": "Мода и медиана",
+        "Importance": 2,
+        "topic_name": "Описательная статистика",
+        "topic_code": 8.1
+    },
+    {
+        "skill": 166,
+        "skill_name": "Определение событий",
+        "Importance": 1,
+        "topic_name": "Вероятность",
+        "topic_code": 8.2
+    },
+    {
+        "skill": 167,
+        "skill_name": "Нахождение вероятности простых событий",
+        "Importance": 1,
+        "topic_name": "Вероятность",
+        "topic_code": 8.2
+    },
+    {
+        "skill": 168,
+        "skill_name": "Применение формул вероятности",
+        "Importance": 2,
+        "topic_name": "Вероятность",
+        "topic_code": 8.2
+    },
+    {
+        "skill": 169,
+        "skill_name": "Перестановки",
+        "Importance": 2,
+        "topic_name": "Комбинаторика",
+        "topic_code": 8.3
+    },
+    {
+        "skill": 170,
+        "skill_name": "Размещения",
+        "Importance": 2,
+        "topic_name": "Комбинаторика",
+        "topic_code": 8.3
+    },
+    {
+        "skill": 171,
+        "skill_name": "Сочетания",
+        "Importance": 2,
+        "topic_name": "Комбинаторика",
+        "topic_code": 8.3
+    },
+    {
+        "skill": 172,
+        "skill_name": "Подсчёт с использованием формул комбинаторики",
+        "Importance": 2,
+        "topic_name": "Комбинаторика",
+        "topic_code": 8.3
+    },
+    {
+        "skill": 173,
+        "skill_name": "Операции с множествами",
+        "Importance": 2,
+        "topic_name": "Множества",
+        "topic_code": 8.4
+    },
+    {
+        "skill": 174,
+        "skill_name": "Диаграммы Эйлера–Венна",
+        "Importance": 2,
+        "topic_name": "Множества",
+        "topic_code": 8.4
+    },
+    {
+        "skill": 175,
+        "skill_name": "Вершины и рёбра",
+        "Importance": 2,
+        "topic_name": "Графы",
+        "topic_code": 8.5
+    },
+    {
+        "skill": 176,
+        "skill_name": "Связность графа",
+        "Importance": 3,
+        "topic_name": "Графы",
+        "topic_code": 8.5
+    },
+    {
+        "skill": 177,
+        "skill_name": "Поиск путей",
+        "Importance": 3,
+        "topic_name": "Графы",
+        "topic_code": 8.5
+    },
+    {
+        "skill": 178,
+        "skill_name": "Решение прикладных задач с графами",
+        "Importance": 3,
+        "topic_name": "Графы",
+        "topic_code": 8.5
+    },
+    {
+        "skill": 24,
+        "skill_name": "Чтение и анализ графических схем: Графики",
+        "Importance": 1,
+        "topic_name": "Работа с данными и графиками",
+        "topic_code": 9.1
+    },
+    {
+        "skill": 25,
+        "skill_name": "Чтение и анализ диаграмм: круговые, линейные, столбчатые",
+        "Importance": 1,
+        "topic_name": "Работа с данными и графиками",
+        "topic_code": 9.1
+    },
+    {
+        "skill": 198,
+        "skill_name": "Чтение и анализ графических схем: таблицы",
+        "Importance": 1,
+        "topic_name": "Работа с данными и графиками",
+        "topic_code": 9.1
+    },
+    {
+        "skill": 199,
+        "skill_name": "Перевод расписания/таблицы времени в расчёт продолжительности",
+        "Importance": 2,
+        "topic_name": "Работа с данными и графиками",
+        "topic_code": 9.1
+    },
+    {
+        "skill": 181,
+        "skill_name": "Чтение условия и извлечение данных из текста",
+        "Importance": 2,
+        "topic_name": "Работа с данными и графиками",
+        "topic_code": 9.1
+    },
+    {
+        "skill": 182,
+        "skill_name": "Стратегии решения задачи с краткой записью",
+        "Importance": 2,
+        "topic_name": "Работа с данными и графиками",
+        "topic_code": 9.1
+    },
+    {
+        "skill": 183,
+        "skill_name": "Анализ ошибочных решений",
+        "Importance": 2,
+        "topic_name": "Работа с данными и графиками",
+        "topic_code": 9.1
+    },
+    {
+        "skill": 192,
+        "skill_name": "Единицы измерения: Перевод между величинами",
+        "Importance": 2,
+        "topic_name": "Работа с данными и графиками",
+        "topic_code": 9.1
+    },
+    {
+        "skill": 200,
+        "skill_name": "Построение простейших графиков на координатной плоскости по табличным данным",
+        "Importance": 1,
+        "topic_name": "Работа с данными и графиками",
+        "topic_code": 9.1
+    },
+    {
+        "skill": 26,
+        "skill_name": "Квартиры",
+        "Importance": 2,
+        "topic_name": "Прикладная геометрия / Чтение и анализ графических схем",
+        "topic_code": 9.2
+    },
+    {
+        "skill": 27,
+        "skill_name": "Схема маршрута / карта",
+        "Importance": 2,
+        "topic_name": "Прикладная геометрия / Чтение и анализ графических схем",
+        "topic_code": 9.2
+    },
+    {
+        "skill": 28,
+        "skill_name": "Страхование ОСАГО",
+        "Importance": 2,
+        "topic_name": "Прикладная геометрия / Чтение и анализ графических схем",
+        "topic_code": 9.2
+    },
+    {
+        "skill": 29,
+        "skill_name": "Тарифные планы",
+        "Importance": 2,
+        "topic_name": "Прикладная геометрия / Чтение и анализ графических схем",
+        "topic_code": 9.2
+    },
+    {
+        "skill": 30,
+        "skill_name": "Лист бумаги",
+        "Importance": 2,
+        "topic_name": "Прикладная геометрия / Чтение и анализ графических схем",
+        "topic_code": 9.2
+    },
+    {
+        "skill": 31,
+        "skill_name": "Печи",
+        "Importance": 2,
+        "topic_name": "Прикладная геометрия / Чтение и анализ графических схем",
+        "topic_code": 9.2
+    },
+    {
+        "skill": 32,
+        "skill_name": "Шины",
+        "Importance": 2,
+        "topic_name": "Прикладная геометрия / Чтение и анализ графических схем",
+        "topic_code": 9.2
+    },
+    {
+        "skill": 33,
+        "skill_name": "Участки",
+        "Importance": 2,
+        "topic_name": "Прикладная геометрия / Чтение и анализ графических схем",
+        "topic_code": 9.2
+    },
+    {
+        "skill": 34,
+        "skill_name": "Теплицы",
+        "Importance": 2,
+        "topic_name": "Прикладная геометрия / Чтение и анализ графических схем",
+        "topic_code": 9.2
+    }
+]
